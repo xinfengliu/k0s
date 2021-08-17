@@ -27,6 +27,10 @@ func (c CalicoInstaller) Healthy() error {
 	panic("stub component is used: CalicoInstaller")
 }
 
+func (c CalicoInstaller) Reconcile() error {
+	panic("stub component is used: CalicoInstaller")
+}
+
 type KubeProxy struct {
 	K0sVars   constant.CfgVars
 	CIDRRange string
@@ -42,6 +46,10 @@ func (k KubeProxy) Run() error {
 }
 
 func (k KubeProxy) Stop() error {
+	panic("stub component is used: KubeProxy")
+}
+
+func (k KubeProxy) Reconcile() error {
 	panic("stub component is used: KubeProxy")
 }
 
